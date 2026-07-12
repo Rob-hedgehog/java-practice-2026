@@ -1,0 +1,17 @@
+create table product (
+    id serial not null,
+	name char(20) not null,
+	price integer check(price > -1),
+
+);
+
+insert into product(name, price) values(tomato, 20);
+
+insert into product(name, price) values(cucumber, 15);
+
+insert into product(name, price) values(tea, 25); 
+
+insert into product(name, price) values(coffee, 30);
+
+select * from product
+
